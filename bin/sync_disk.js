@@ -20,7 +20,7 @@ function sync(err, stdout, stderr) {
 		console.log("Synced to disk.");
 		process.send({ 'action' : 'syncDisk', 'data' : true });
 	}, 1000);
-}
+};
 
 module.exports = function() { 
 

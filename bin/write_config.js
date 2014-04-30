@@ -4,13 +4,12 @@ var
 	, fs = require('fs')
 	, path = require('path')
 	, util = require('util')
-	, confPath = process.argv[2]
+	, confPath = '/etc/wpa_supplicant.conf'
 	, writeConfig = function(conf) {
 
-		console.log("conf path is: ");
-		console.log(confPath);
-		console.log("Writing WiFi configuration...");
 		var fd = fs.createWriteStream(confPath);
+
+		console.log("Writing WiFi configuration...");
 		fd.on('error', function(err) {
 
 			console.log("Error writing WiFi configuration.", err);
