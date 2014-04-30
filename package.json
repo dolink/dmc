@@ -1,25 +1,29 @@
 {
-  "name": "box",
-  "version": "0.0.0",
-  "description": "Ollo Box Console",
-  "main": "index.js",
-  "scripts": {
-    "test": ""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://bitbucket.org/ollomind/box"
-  },
-  "keywords": [
-    "ollo",
-    "box",
-    "wifi",
-    "console"
-  ],
-  "license": "MIT",
-  "dependencies": {
-    "optimist": "~0.3.4",
-    "express": "~3.0.0rc4",
-    "ejs": "~0.8.3"
-  }
+    "name": "box",
+    "version": "0.1.0",
+    "description": "Ollo Box Console",
+    "main": "index.js",
+    "scripts": {
+        "start": "./index.js"
+    },
+    "bin": {
+        "block-wifi": "./index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://bitbucket.org/ollomind/box.git"
+    },
+    "keywords": [
+        "ollo",
+        "box",
+        "wifi",
+        "console"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "optimist": "~0.3.4",
+        "express": "~3.2.6",
+        "ejs": "~0.8.3",
+        "colors": "~0.6.0-1"
+    }
 }
