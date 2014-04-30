@@ -24,16 +24,15 @@ module.exports = function(app) {
 	app.use(express.cookieSession());	
 
 	app.use(function(req, res, next) {
-		var os = require('os')
+		var os = require('os');
 		if (os.platform() !== 'linux') {
 			var err = new Error('Wifi Setup is not implemented on this platform.')
 			return next(err)
 		}
 		app.emit('platformOK', true);
 		next()
-	})
+	});
 
-	
 	/**
 	 * We can log everything here
 	 */	
@@ -45,8 +44,6 @@ module.exports = function(app) {
 	});
 
 
-
-
 	route(app, middleware(this, app));
 	app.use(function(err, req, res, next) {
 		if (!err) return next();
@@ -56,7 +53,7 @@ module.exports = function(app) {
 			title: 'Sorry',
 			message: err.message
 		})
-	})
+	});
 
 	return app
 };

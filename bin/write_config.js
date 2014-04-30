@@ -4,7 +4,10 @@ var
 	, fs = require('fs')
 	, path = require('path')
 	, util = require('util')
-	, confPath = '/etc/wpa_supplicant.conf'
+//	, confPath = '/etc/wpa_supplicant.conf'
+// TODO should put `wpa_supplicant.conf` in `/etc/wpa_supplicant/` in raspberry pi. Other linux environment ?
+
+	, confPath = '/etc/wpa_supplicant/wpa_supplicant.conf'
 	, writeConfig = function(conf) {
 
 		var fd = fs.createWriteStream(confPath);

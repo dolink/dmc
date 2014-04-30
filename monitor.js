@@ -33,6 +33,6 @@ function handleMessage(dat) {
 
 		process.send({ 'error' : 'unknownAction', 'action' : action });
 	}
-};
+}
 
 process.on('message', handleMessage);

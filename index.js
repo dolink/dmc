@@ -56,7 +56,7 @@ function message(msg) {
 	}
 
 	app.emit(msg.action, msg.data);
-};
+}
 
 var monitor = function monitor() {
 
@@ -70,7 +70,7 @@ var monitor = function monitor() {
 	// kill child if parent dies
 	process.once('exit', function() {
 		monitor.process.kill()
-	})
+	});
 };
 
 /**
@@ -82,7 +82,7 @@ app.send = function send(action, data) {
 		app.once('monitor', function() {
 			deliver()
 		})
-	} else deliver()
+	} else deliver();
 
 	function deliver() {
 		monitor.process.send({ 

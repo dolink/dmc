@@ -93,6 +93,6 @@
 	function error(res, err) {
 
 		res.json({ "error" : err || "Unknown error" });
-	};
+	}
 
 })();
