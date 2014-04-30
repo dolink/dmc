@@ -1,7 +1,7 @@
 {
   "name": "box-wifi",
   "version": "0.0.0",
-  "description": "Ollo WiFi Settings",
+  "description": "Ollo WiFi Setup",
   "main": "index.js",
   "scripts": {
     "test": ""
