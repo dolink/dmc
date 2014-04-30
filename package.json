@@ -1,0 +1,24 @@
+{
+  "name": "box-wifi",
+  "version": "0.0.0",
+  "description": "Ollo WiFi Settings",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://bitbucket.org/ollomind/box-wifi"
+  },
+  "keywords": [
+    "ollo",
+    "box",
+    "wifi"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "optimist": "~0.3.4",
+    "express": "~3.0.0rc4",
+    "ejs": "~0.8.3"
+  }
+}
