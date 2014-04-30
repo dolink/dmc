@@ -124,7 +124,7 @@ app.log = this.log;
 
 creds.call(this, {
 
-	serialFile : '/etc/opt/ninja/serial.conf'
+	serialFile : '/etc/opt/ollo/serial.conf'
 });
 
 app.once('platformOK', function() {

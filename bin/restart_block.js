@@ -7,7 +7,7 @@ function restart(err, stdout, stderr) {
 	
 	if(err) {
 
-		console.log("Error restarting block.", err);
+		console.log("Error restarting box.", err);
 		return process.send({ 'action' : 'restartBlock', 'error' : err });
 	}
 	console.log("Restarting NOW!");
@@ -16,6 +16,6 @@ function restart(err, stdout, stderr) {
 
 module.exports = function() { 
 
-	console.log("Attempting to restart block...");
+	console.log("Attempting to restart box...");
 	exec('shutdown -r now', opts, restart) 
 }

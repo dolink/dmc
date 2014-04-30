@@ -134,20 +134,20 @@ module.exports = function(wifi, app) {
 		}
 		, userAuth : function(req, res, next) {
 
-			if((req.session) && req.session.block) { // session already checked
+			if((req.session) && req.session.box) { // session already checked
 
-				if(req.session.block == wifi.serial) {
+				if(req.session.box == wifi.serial) {
 					
 					wifi.log.debug("User has proper credentials in session");
 					return next();
 				}
 				wifi.log.info("User has invalid credential in session");
 			}
-			if((req.query) && req.query.block) { // check new session
+			if((req.query) && req.query.box) { // check new session
 
-				if(req.query.block == wifi.serial) {
+				if(req.query.box == wifi.serial) {
 
-					req.session.block = req.query.block;
+					req.session.box = req.query.box;
 					wifi.log.info("User provided proper credentials");
 					return next();
 				}
