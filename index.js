@@ -117,7 +117,7 @@ process.on("uncaughtException", function(err) {
 this.log = new logger({
 
 	env : 'production'
-	, logFile : '/var/log/wifisetup.log'
+	, logFile : '/var/log/box.log'
 });
 
 app.log = this.log;
@@ -128,8 +128,8 @@ creds.call(this, {
 });
 
 app.once('platformOK', function() {
-  app.log.log('platform ok, starting monitoring')
+  app.log.log('platform ok, starting monitoring');
   monitor();
-})
+});
 
 config.call(this, app).listen(port);
