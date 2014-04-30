@@ -1,19 +1,20 @@
 {
-  "name": "box-wifi",
+  "name": "box",
   "version": "0.0.0",
-  "description": "Ollo WiFi Setup",
+  "description": "Ollo Box Console",
   "main": "index.js",
   "scripts": {
     "test": ""
   },
   "repository": {
     "type": "git",
-    "url": "git://bitbucket.org/ollomind/box-wifi"
+    "url": "git://bitbucket.org/ollomind/box"
   },
   "keywords": [
     "ollo",
     "box",
-    "wifi"
+    "wifi",
+    "console"
   ],
   "license": "MIT",
   "dependencies": {
