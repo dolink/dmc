@@ -1,7 +1,7 @@
 {
-    "name": "bmc",
+    "name": "dmc",
     "version": "0.1.0",
-    "description": "Dobox management console application",
+    "description": "Dobox Management Console",
     "main": "index.js",
     "scripts": {
         "start": "./index.js"
@@ -11,7 +11,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/dolink/bmc.git"
+        "url": "https://github.com/dolink/dmc.git"
     },
     "keywords": [
         "dobox",
