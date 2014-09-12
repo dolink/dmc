@@ -10,7 +10,7 @@ var
 		, "ifaceCheck" : require('./bin/iface_check')
 		, "deviceCheck" : require('./bin/device_check')
 		, "writeConfig" : require('./bin/write_config')
-		, "restartBlock" : require('./bin/restart_block')
+		, "restartBox" : require('./bin/restart_box')
 		, "restartSupplicant" : require('./bin/restart_supplicant')
 		, "init" : function() {
 

@@ -15,7 +15,7 @@
 
 			$('p').html([
 
-				'An error occurred while restarting your Ollo Box.'
+				'An error occurred while restarting your Dobox.'
 				, 'Please try again.'
 			].join(' '));
 		}
@@ -28,7 +28,7 @@
 
 			$('p').html([
 
-				'Your Ollo Box is now restarting...'
+				'Your Dobox is now restarting...'
 				, 'Please be patient.'
 			].join(' '));
 

@@ -4,7 +4,7 @@
 
 		var reset = function reset() {
 
-			app.send('restartBlock', true);
+			app.send('restartBox', true);
 			
 		};
 
