@@ -1,23 +1,22 @@
 {
-    "name": "box",
+    "name": "dobox",
     "version": "0.1.0",
-    "description": "Ollo Box Console",
+    "description": "dobox console application",
     "main": "index.js",
     "scripts": {
         "start": "./index.js"
     },
     "bin": {
-        "block-wifi": "./index.js"
+        "dobox": "./index.js"
     },
     "repository": {
         "type": "git",
-        "url": "https://bitbucket.org/ollomind/box.git"
+        "url": "https://github.com/dolink/dobox.git"
     },
     "keywords": [
-        "ollo",
-        "box",
-        "wifi",
-        "console"
+        "dobox",
+        "console",
+        "wifi"
     ],
     "license": "MIT",
     "dependencies": {
