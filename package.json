@@ -1,7 +1,7 @@
 {
-    "name": "dobox",
+    "name": "bmc",
     "version": "0.1.0",
-    "description": "dobox console application",
+    "description": "Dobox management console application",
     "main": "index.js",
     "scripts": {
         "start": "./index.js"
@@ -11,10 +11,11 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/dolink/dobox.git"
+        "url": "https://github.com/dolink/bmc.git"
     },
     "keywords": [
         "dobox",
+        "management",
         "console",
         "wifi"
     ],
