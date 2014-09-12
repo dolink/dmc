@@ -1,4 +1,4 @@
-BMC
+DMC
 ===
 
-dobox management console application
+> Dobox Management Console
